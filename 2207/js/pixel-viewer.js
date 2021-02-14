@@ -933,6 +933,7 @@ var paint = function(row, col, left, top, width, height, zoom) {
         var cell_lines = cell_text.split('\n');
 
         for (var i = 0; i < cell_lines.length; i++)
+			console.log(pixelData[i]);
             context.fillText(cell_lines[i] + pixelData[i], left + (6 * zoom), top + (14 * zoom) + (i * cell_line_height * zoom) );
     }
 };
