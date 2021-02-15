@@ -9,6 +9,104 @@
     <!--<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">-->
     <link rel="stylesheet" href="css/website.css">
     <link rel="stylesheet" href="css/pixel-viewer.css">
+	<!-- 'website.css' overrides -->
+	<style>
+	body {
+		font-size: 0.875rem;
+	}
+	#body-flex-container>nav {
+		height: 2.6rem;
+	}
+	.navbar {
+		background-color: #ffffff;
+	}
+	.btn {
+		display: inline-block;
+		padding: 6px 12px;
+		margin-bottom: 0;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 1.42857143;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: middle;
+		-ms-touch-action: manipulation;
+		  touch-action: manipulation;
+		cursor: pointer;
+		-webkit-user-select: none;
+		 -moz-user-select: none;
+		  -ms-user-select: none;
+			  user-select: none;
+		background-image: none;
+		border: 1px solid transparent;
+		border-radius: 4px;
+	}
+	.btn:focus,
+	.btn:active:focus,
+	.btn.active:focus,
+	.btn.focus,
+	.btn:active.focus,
+	.btn.active.focus {
+		outline: thin dotted;
+		outline: 5px auto -webkit-focus-ring-color;
+		outline-offset: -2px;
+		-webkit-box-shadow: none;
+				box-shadow: none;
+	}
+	.btn:hover,
+	.btn:focus,
+	.btn.focus {
+		color: #333;
+		text-decoration: none;
+		-webkit-box-shadow: none;
+				box-shadow: none;
+	}
+	.btn:active,
+	.btn.active {
+		background-image: none;
+		outline: 0;
+		-webkit-box-shadow: none;
+				box-shadow: none;
+	}
+	.btn.disabled,
+	.btn[disabled],
+	fieldset[disabled] .btn {
+		cursor: not-allowed;
+		filter: alpha(opacity=65);
+		-webkit-box-shadow: none;
+				box-shadow: none;
+		opacity: .65;
+	}
+	a.btn.disabled,
+	fieldset[disabled] a.btn {
+		pointer-events: none;
+	}
+	.btn-primary {
+		color: #fff;
+		background-color: #337ab7;
+		border-color: #2e6da4;
+	}
+	.btn-primary:focus,
+	.btn-primary.focus,
+	.btn-primary:hover,
+	.btn-primary:active,
+	.btn-primary.active {
+		color: #fff;
+		background-color: #286090;
+		border-color: #122b40;
+		-webkit-box-shadow: none;
+				box-shadow: none;
+	}
+	.btn-primary:not(:disabled):not(.disabled):active,
+	.btn-primary:not(:disabled):not(.disabled).active,
+	.show>.btn-primary.dropdown-toggle {
+		color: #fff;
+		background-color: #286090;
+		border-color: #122b40;
+		-webkit-box-shadow: none;
+				box-shadow: none;
+	}
+	</style>
   </head>
 
   <body style="text-align: left;">
@@ -18,13 +116,13 @@
           <div class="container px-0">
 			<div id="pixel-viewer-interactive-buttons" class="flex-shrink-0">
 				<button id="pixel-viewer-interactive-zoom-in" class="btn btn-primary">
-					Zoom In
+					Povečaj
 				</button>
 				<button id="pixel-viewer-interactive-zoom-out" class="btn btn-primary">
-					Zoom Out
+					Pomanjšaj
 				</button>
 				<button id="pixel-viewer-interactive-menu-toggle" class="btn btn-primary">
-					Toggle Menu
+					Navodila
 				</button>
 			</div>
 
