@@ -66,7 +66,7 @@ this.image_filename = 'coloured-roof-small.png';
 this.tiling = new Tiling;
 this.piccache = Array();
 
-const image_base_path = base_static_path + 'interactives/pixel-viewer/img/';
+const image_base_path = './img/';
 var source_canvas = document.getElementById('pixel-viewer-interactive-source-canvas');
 var colour_code_rep = 'rgb';
 
