@@ -226,7 +226,10 @@
 
     
     <script type="text/javascript">
-        var base_static_path = "https://storage.googleapis.com/cs-field-guide.appspot.com/static/";
+	    console.log("Test");
+        //var base_static_path = "https://storage.googleapis.com/cs-field-guide.appspot.com/static/";
+		var base_static_path = window.location.origin + window.location.pathname;
+		console.log(base_static_path);
     </script>
     <script type="text/javascript" src="https://storage.googleapis.com/cs-field-guide.appspot.com/static/interactives/pixel-viewer/js/third-party/Scroller.js"></script>
     <script type="text/javascript" src="https://storage.googleapis.com/cs-field-guide.appspot.com/static/interactives/pixel-viewer/js/third-party/Animate.js"></script>
