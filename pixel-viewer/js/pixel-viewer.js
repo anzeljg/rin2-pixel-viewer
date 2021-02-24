@@ -85,7 +85,6 @@ $( document ).ready(function() {
   else {
     image_filepath = image_base_path + image_filename;
   }
-  console.log(image_filepath);
 
   $('#pixel-viewer-interactive-original-image').attr('crossorigin', 'anonymous').attr('src', image_filepath);
   load_resize_image(image_filepath, false);
