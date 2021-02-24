@@ -7,10 +7,22 @@
     <meta name="description" content="An online interactive resource for high school students learning about computer science">
     <meta name="author" content="University of Canterbury Computer Science Education Research Group">
     <!--<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">-->
-    <link rel="stylesheet" href="css/website.css">
+    <!--<link rel="stylesheet" href="css/website.css">-->
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- jQuery UI -->
+	<link href="css/jquery-ui.css" rel="stylesheet">
+
+	<!-- Pixel Viewer -->
     <link rel="stylesheet" href="css/pixel-viewer.css">
 	<!-- 'website.css' overrides -->
 	<style>
+/*
 	body {
 		font-size: 0.875rem;
 	}
@@ -106,6 +118,7 @@
 		-webkit-box-shadow: none;
 				box-shadow: none;
 	}
+*/
 	</style>
   </head>
 
@@ -149,7 +162,7 @@
         </div>
 //-->
         <div id="pixel-viewer-interactive-container">
-            <img id="pixel-viewer-interactive-original-image" />
+            <img id="pixel-viewer-interactive-original-image" src="./img/coloured-roof-small.png" />
             <div id="pixel-viewer-interactive-loader"></div>
             <canvas id="pixel-viewer-interactive-content"></canvas>
             <div id="pixel-viewer-interactive-settings" class="menu-offscreen p-3">
@@ -240,7 +253,15 @@
         </div>
     </div>
 
-    <script src="js/website.js"></script>
+    <!--<script src="website.js"></script>-->
+
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
 
     <!--
 	<script type="text/javascript">
